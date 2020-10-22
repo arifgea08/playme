@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:playme/ui/cons.dart';
 import 'package:playme/ui/album.dart';
+import 'package:playme/ui/drawer.dart';
 import 'package:playme/ui/favorit.dart';
 import 'package:playme/ui/laguSaya.dart';
 import 'package:playme/ui/riwayat.dart';
@@ -14,9 +15,9 @@ class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      drawer: Drawer(),
+      drawer: DrawerPage(),
       appBar: AppBar(
-          title: Text('PlayMe', style: styleku),
+          title: Text('PlayMe', style: TextStyle(color: texticonColor, fontSize:24.0)),
           centerTitle: true,
           titleSpacing: 2.0,
           actions: [
@@ -32,7 +33,7 @@ class _HomePageState extends State<HomePage> {
             labelPadding: EdgeInsets.only(left: 25, right: 15, bottom: 3),
             labelColor: Color(0xFFffbe0b),
             isScrollable: true,
-            labelStyle: TextStyle(fontSize: 16, fontFamily: 'LemonadaFont'),
+            labelStyle: TextStyle(fontSize: 16, fontFamily: 'LemonadaFont', fontWeight: FontWeight.bold),
             tabs: [
               Tab(text: 'RIWAYAT'),
               Tab(text: 'LAGU SAYA'),
@@ -47,7 +48,7 @@ class _HomePageState extends State<HomePage> {
           image: AssetImage('assets/bg1.jpg'),
           fit: BoxFit.cover,
           colorFilter: ColorFilter.mode(
-              Colors.black.withOpacity(0.6),BlendMode.luminosity),
+              Colors.black.withOpacity(0.6), BlendMode.luminosity),
         )),
         child: TabBarView(
           children: [

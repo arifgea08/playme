@@ -4,6 +4,7 @@ const bgColor = Color(0xFFffba08);
 const texticonColor = Colors.white;
 const lineColor = Color(0xFFffba08);
 const bgColor1 = Color(0xFF2ec4b6);
+const textColor = Color(0xFFffbe0b);
 
 const bggraColor = LinearGradient(
   colors: [
@@ -17,6 +18,13 @@ const bggraColor = LinearGradient(
 
 const TextStyle styleku =
     TextStyle(fontWeight: FontWeight.bold, fontSize: 24.0);
+
+const TextStyle textStyle = TextStyle(
+  fontWeight: FontWeight.bold,
+  fontSize: 16.0,
+  color: lineColor,
+  fontFamily: 'LemonadaFont',
+);
 
 const TextStyle stylelisttitle = TextStyle(
     fontWeight: FontWeight.bold,

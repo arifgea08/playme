@@ -60,7 +60,7 @@ class _LaguSayaState extends State<LaguSaya> {
                               builder: (context) => PlayScreen()));
                     },
                     subtitle: Text("Unkown", style: styleSub),
-                    leading: Image.asset('assets/music.png'),
+                    leading: Image.asset('assets/music.png', fit: BoxFit.cover),
                     title: Text(text, style: stylelisttitle)),
               );
             }),
