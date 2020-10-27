@@ -6,14 +6,8 @@ const lineColor = Color(0xFFffba08);
 const bgColor1 = Color(0xFF2ec4b6);
 const textColor = Color(0xFFffbe0b);
 
-// const bggraColor = LinearGradient(
-//   colors: [
-//     Color(0xFFbfd200),
-//     Color(0xFF80b918),
-//     Color(0xFF80b918),
-//     Color(0xFF80b918),
-//     Color(0xFFbfd200),
-//   ],
+// const circleColor = LinearGradient(
+//   colors: [Colors.red, Colors.purple[400]],
 // );
 
 const TextStyle styleku =
